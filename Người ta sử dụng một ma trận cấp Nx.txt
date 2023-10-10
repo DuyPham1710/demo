@@ -1,0 +1,23 @@
+Người ta sử dụng một ma trận cấp NxN (N lẻ) chứa số nguyên để biểu diễn kiến trúc của "Cổ loa thành". Kiến trúc của "Cổ loa thành" được cấu tạo theo lớp từ ngoài vào trong, với 1 lớp "hào sâu" (giá trị âm) xen kẽ với 1 lớp "tường cao" (giá trị dương).
+Yêu cầu: in ra khoảng cách chênh lệch lớn nhất giữa vị trí hào sâu với giá trị tường cao nhất của 2 lớp hào-tường kề nhau.
+Dữ liệu đầu vào:
+- dòng đầu tiên chứa số nguyên dương lẻ N (3<=N<=13) là cấp của ma trận.
+- N dòng tiếp theo mỗi dòng chứ N số nguyên là giá trị của ma trận Cổ Loa Thành.
+Ghi Chú: Lớp ngoài cùng có thể là hào sâu hoặc tường cao nhưng lớp hào sâu và lớp tường cao luôn luôn xen kẽ nhau.
+Dữ liệu đầu ra:
+- Một dòng duy nhất là độ chênh lệch lớn nhất của 2 lớp hào-thành kề nhau.
+Ví dụ:
+Dữ liệu vào:
+5
+-2 -5 -3 -1 -4
+-7 12 15 10 -9
+-3 17 -23 11 -3
+-2 14 10 19 -8
+-4 -6 -1 -2 -2
+Dữ liệu ra:
+42
+Giải thích: 
+Vị trí sâu nhất của lớp hào ngoài cùng có giá trị -9
+Vị trí cao nhất của lớp tường tiếp theo có giá trị 19
+Vị trí sâu nhất của lớp hào trong cùng có giá trị -23
+Vậy độ chênh lệch lớn nhất là abs(19-(-23)) = 42, do độ chênh lệch giữa lớp ngoài và lớp kế cận chỉ là abs(-9-19) = 28
